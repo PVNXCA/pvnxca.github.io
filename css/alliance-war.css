@@ -353,7 +353,7 @@ body {
 /* MENU */
 
 .alliance-war__menu {
-	width: calc(100% / 2800 * 268);
+	/*width: calc(100% / 2800 * 268);*/
 	position: absolute;
 	top: calc(100% / 1400 * 100);
 	right: calc(100% / 2800 * 50);
@@ -456,3 +456,4 @@ body {
 		font-size: calc(100vh / 1400 * 40);
 	}
 }
+
