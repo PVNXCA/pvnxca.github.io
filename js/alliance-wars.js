@@ -1,26 +1,26 @@
 // Change the orientation css class
 
 let CurrentHtml = document.querySelector('html');
-let LgWarContent = document.querySelector('.lg-war');
+let LgWarContent = document.querySelector('.alliance-wars');
 function setOrientationClass() {
 	if (LgWarContent !== null) {
 		if (window.innerWidth > window.innerHeight) {
-			LgWarContent.classList.add('lg-war--horizontal');
-			LgWarContent.classList.remove('lg-war--vertical');
+			LgWarContent.classList.add('alliance-wars--horizontal');
+			LgWarContent.classList.remove('alliance-wars--vertical');
 			if (window.innerHeight / window.innerWidth <= 0.5) {
 				CurrentHtml.classList.add('ratio-by-height');
 				CurrentHtml.classList.remove('ratio-by-width');
-				LgWarContent.classList.add('lg-war--ratio-by-height');
-				LgWarContent.classList.remove('lg-war--ratio-by-width');
+				LgWarContent.classList.add('alliance-wars--ratio-by-height');
+				LgWarContent.classList.remove('alliance-wars--ratio-by-width');
 			} else {
 				CurrentHtml.classList.add('ratio-by-width');
 				CurrentHtml.classList.remove('ratio-by-height');
-				LgWarContent.classList.add('lg-war--ratio-by-width');
-				LgWarContent.classList.remove('lg-war--ratio-by-height');
+				LgWarContent.classList.add('alliance-wars--ratio-by-width');
+				LgWarContent.classList.remove('alliance-wars--ratio-by-height');
 			}
 		} else {
-			LgWarContent.classList.add('lg-war--vertical');
-			LgWarContent.classList.remove('lg-war--horizontal');
+			LgWarContent.classList.add('alliance-wars--vertical');
+			LgWarContent.classList.remove('alliance-wars--horizontal');
 		}
 	}
 }
@@ -62,12 +62,12 @@ if (CurrentParameters == '') {
 }
 let menuButton;
 for (let i = 1; i < 11; i++) {
-	menuButton = document.querySelector('.lg-war__menu__button--' + i);
+	menuButton = document.querySelector('.alliance-wars__menu__button--' + i);
 	menuButton.addEventListener('click', function() {
-		this.classList.toggle('lg-war__menu__button--on');
-		this.classList.toggle('lg-war__menu__button--off');
-		document.querySelectorAll('.lg-war__grid__edge__sector__team--' + i).forEach(function(item) {
-			item.classList.toggle('lg-war__grid__edge__sector__team--off');
+		this.classList.toggle('alliance-wars__menu__button--on');
+		this.classList.toggle('alliance-wars__menu__button--off');
+		document.querySelectorAll('.alliance-wars__grid__edge__sector__team--' + i).forEach(function(item) {
+			item.classList.toggle('alliance-wars__grid__edge__sector__team--off');
 		});
 	});
 	if (CurrentParameters.get('color' + i)) {
@@ -82,11 +82,11 @@ for (let i = 1; i < 11; i++) {
 		menuButton.innerHTML = ColorObject[CurrentParameters.get('color' + i)]['name'];
 		
 		if (CurrentParameters.get('color' + i) == 'frenchy') {
-			LgWarContent.classList.add('lg-war-' + i);
+			LgWarContent.classList.add('alliance-wars-' + i);
 			
-			document.querySelectorAll('.lg-war__grid__edge__sector__team--' + i).forEach(function(item) {
+			document.querySelectorAll('.alliance-wars__grid__edge__sector__team--' + i).forEach(function(item) {
 				item.parentNode.insertAdjacentHTML('beforeEnd', ''
-					+ '<div class="lg-war__grid__edge__sector__frenchy"></div>'
+					+ '<div class="alliance-wars__grid__edge__sector__frenchy"></div>'
 				);
 			});
 		}

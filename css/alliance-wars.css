@@ -14,22 +14,22 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-.lg-war {
+.alliance-wars {
 	background-image: url('../img/alliance-wars/background.jpg');
 	background-size: cover;
 	aspect-ratio: 2/1;
 	position: relative;
 }
-.lg-war--ratio-by-height {
+.alliance-wars--ratio-by-height {
 	height: 1400px;
 	max-height: 100%;
 }
 
-.lg-war--ratio-by-width {
+.alliance-wars--ratio-by-width {
 	width: 2800px;
 	max-width: 100%;
 }
-.lg-war::before {
+.alliance-wars::before {
 	content: '';
 	background-size: cover;
 	position: absolute;
@@ -38,40 +38,40 @@ body {
 	bottom: 0;
 	left: 0;
 }
-.lg-war-1::before {
+.alliance-wars-1::before {
 	background-image: url('../img/alliance-wars/sectors-1.png');
 }
-.lg-war-2::before {
+.alliance-wars-2::before {
 	background-image: url('../img/alliance-wars/sectors-2.png');
 }
-.lg-war-3::before {
+.alliance-wars-3::before {
 	background-image: url('../img/alliance-wars/sectors-3.png');
 }
-.lg-war-4::before {
+.alliance-wars-4::before {
 	background-image: url('../img/alliance-wars/sectors-4.png');
 }
-.lg-war-5::before {
+.alliance-wars-5::before {
 	background-image: url('../img/alliance-wars/sectors-5.png');
 }
-.lg-war-6::before {
+.alliance-wars-6::before {
 	background-image: url('../img/alliance-wars/sectors-6.png');
 }
-.lg-war-7::before {
+.alliance-wars-7::before {
 	background-image: url('../img/alliance-wars/sectors-7.png');
 }
-.lg-war-8::before {
+.alliance-wars-8::before {
 	background-image: url('../img/alliance-wars/sectors-8.png');
 }
-.lg-war-9::before {
+.alliance-wars-9::before {
 	background-image: url('../img/alliance-wars/sectors-9.png');
 }
-.lg-war-10::before {
+.alliance-wars-10::before {
 	background-image: url('../img/alliance-wars/sectors-10.png');
 }
 
 /* GRID */
 
-.lg-war__container {
+.alliance-wars__container {
 	height: 100%;
 	aspect-ratio: 2632/1400;
 	box-sizing: border-box;
@@ -79,40 +79,40 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-.lg-war__grid {
+.alliance-wars__grid {
 	width: calc(100% / 2632 * 2432);
 	height: calc(100% / 1400 * 1200);
 	position: relative;
 }
-.lg-war__grid__edge {
+.alliance-wars__grid__edge {
 	display: flex;
 	position: absolute;
 }
-.lg-war__grid__edge--top {
+.alliance-wars__grid__edge--top {
 	height: 18%;
 	top: 0;
 	left: 6.57895%;
 	right: 6.57895%;
 }
-.lg-war__grid__edge--bottom {
+.alliance-wars__grid__edge--bottom {
 	height: 22.5%;
 	bottom: 0;
 	left: 0;
 	right: 0;
 }
-.lg-war__grid__edge--left,
-.lg-war__grid__edge--right {
+.alliance-wars__grid__edge--left,
+.alliance-wars__grid__edge--right {
 	width: 11%;
 	flex-direction: column;
 	top: 0;
 	bottom: 0;
 }
-.lg-war__grid__edge--left {
+.alliance-wars__grid__edge--left {
 	left: 0;
 	transform: skewX(-7.6deg) scaleX(1.5);
 	transform-origin: 0 100%;
 }
-.lg-war__grid__edge--right {
+.alliance-wars__grid__edge--right {
 	align-items: flex-end;
 	right: 0;
 	transform: skewX(7.6deg) scaleX(1.5);
@@ -121,7 +121,7 @@ body {
 
 /* SECTOR */
 
-.lg-war__grid__edge__sector {
+.alliance-wars__grid__edge__sector {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -129,53 +129,53 @@ body {
 	position: relative;
 	overflow: hidden;
 }
-.lg-war__grid__edge__sector--top,
-.lg-war__grid__edge__sector--bottom {
+.alliance-wars__grid__edge__sector--top,
+.alliance-wars__grid__edge__sector--bottom {
 	width: calc(100% / 6);
 	height: 100%;
 }
-.lg-war__grid__edge__sector--top {
+.alliance-wars__grid__edge__sector--top {
 	align-items: flex-start;
 }
-.lg-war__grid__edge__sector--bottom {
+.alliance-wars__grid__edge__sector--bottom {
 	align-items: flex-end;
 }
-.lg-war__grid__edge__sector--left,
-.lg-war__grid__edge__sector--right {
+.alliance-wars__grid__edge__sector--left,
+.alliance-wars__grid__edge__sector--right {
 	flex-direction: column;
 }
-.lg-war__grid__edge__sector--left {
+.alliance-wars__grid__edge__sector--left {
 	align-items: flex-end;
 }
-.lg-war__grid__edge__sector--right {
+.alliance-wars__grid__edge__sector--right {
 	align-items: flex-start;
 }
-.lg-war__grid__edge__sector--left--1,
-.lg-war__grid__edge__sector--right--1 {
+.alliance-wars__grid__edge__sector--left--1,
+.alliance-wars__grid__edge__sector--right--1 {
 	width: 90%;
 	height: calc(100% / 1200 * 215);
 }
-.lg-war__grid__edge__sector--left--2,
-.lg-war__grid__edge__sector--right--2 {
+.alliance-wars__grid__edge__sector--left--2,
+.alliance-wars__grid__edge__sector--right--2 {
 	width: 92%;
 	height: calc(100% / 1200 * 226);
 }
-.lg-war__grid__edge__sector--left--3,
-.lg-war__grid__edge__sector--right--3 {
+.alliance-wars__grid__edge__sector--left--3,
+.alliance-wars__grid__edge__sector--right--3 {
 	width: 94%;
 	height: calc(100% / 1200 * 238);
 }
-.lg-war__grid__edge__sector--left--4,
-.lg-war__grid__edge__sector--right--4 {
+.alliance-wars__grid__edge__sector--left--4,
+.alliance-wars__grid__edge__sector--right--4 {
 	width: 97%;
 	height: calc(100% / 1200 * 252);
 }
-.lg-war__grid__edge__sector--left--5,
-.lg-war__grid__edge__sector--right--5 {
+.alliance-wars__grid__edge__sector--left--5,
+.alliance-wars__grid__edge__sector--right--5 {
 	width: 100%;
 	height: calc(100% / 1200 * 269);
 }
-.lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector__frenchy {
 	background-image: url('../img/alliance-wars/frenchy.png');
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -185,137 +185,137 @@ body {
 	position: absolute;
 	top: 20%;
 }
-.lg-war__grid__edge__sector--left .lg-war__grid__edge__sector__frenchy,
-.lg-war__grid__edge__sector--right .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--left .alliance-wars__grid__edge__sector__frenchy,
+.alliance-wars__grid__edge__sector--right .alliance-wars__grid__edge__sector__frenchy {
 	left: 20%;
 }
-.lg-war__grid__edge__sector--left .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--left .alliance-wars__grid__edge__sector__frenchy {
 	transform: skewX(3.8deg) scaleX(calc(1 / 1.5));
 }
-.lg-war__grid__edge__sector--right .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--right .alliance-wars__grid__edge__sector__frenchy {
 	transform: skewX(-3.8deg) scaleX(calc(1 / 1.5));
 }
-.lg-war__grid__edge__sector--top--1 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--top--1 .alliance-wars__grid__edge__sector__frenchy {
 	left: 17%;
 }
-.lg-war__grid__edge__sector--top--2 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--top--2 .alliance-wars__grid__edge__sector__frenchy {
 	left: 18%;
 }
-.lg-war__grid__edge__sector--top--3 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--top--3 .alliance-wars__grid__edge__sector__frenchy {
 	left: 20%;
 }
-.lg-war__grid__edge__sector--top--4 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--top--4 .alliance-wars__grid__edge__sector__frenchy {
 	left: 20%;
 }
-.lg-war__grid__edge__sector--top--5 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--top--5 .alliance-wars__grid__edge__sector__frenchy {
 	left: 22%;
 }
-.lg-war__grid__edge__sector--top--6 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--top--6 .alliance-wars__grid__edge__sector__frenchy {
 	left: 23%;
 }
-.lg-war__grid__edge__sector--bottom--1 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--bottom--1 .alliance-wars__grid__edge__sector__frenchy {
 	left: 24%;
 }
-.lg-war__grid__edge__sector--bottom--2 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--bottom--2 .alliance-wars__grid__edge__sector__frenchy {
 	left: 23%;
 }
-.lg-war__grid__edge__sector--bottom--3 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--bottom--3 .alliance-wars__grid__edge__sector__frenchy {
 	left: 21%;
 }
-.lg-war__grid__edge__sector--bottom--4 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--bottom--4 .alliance-wars__grid__edge__sector__frenchy {
 	left: 19%;
 }
-.lg-war__grid__edge__sector--bottom--5 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--bottom--5 .alliance-wars__grid__edge__sector__frenchy {
 	left: 17%;
 }
-.lg-war__grid__edge__sector--bottom--6 .lg-war__grid__edge__sector__frenchy {
+.alliance-wars__grid__edge__sector--bottom--6 .alliance-wars__grid__edge__sector__frenchy {
 	left: 16%;
 }
 
 /* TEAM */
 
-.lg-war__grid__edge__sector__team {
+.alliance-wars__grid__edge__sector__team {
 	aspect-ratio: 1/1;
 	position: relative;
 	transform: rotate(45deg);
 }
-.lg-war__grid__edge__sector__team--top,
-.lg-war__grid__edge__sector__team--bottom {
+.alliance-wars__grid__edge__sector__team--top,
+.alliance-wars__grid__edge__sector__team--bottom {
 	border: min(4px, 0.2vw) solid #d6dee3;
 	height: 50%;
 		height: 30%;
 }
-.lg-war__grid__edge__sector__team--top {
+.alliance-wars__grid__edge__sector__team--top {
 	top: -18%;
 }
-.lg-war__grid__edge__sector__team--bottom {
+.alliance-wars__grid__edge__sector__team--bottom {
 	bottom: -18%;
 }
-.lg-war__grid__edge__sector__team--left,
-.lg-war__grid__edge__sector__team--right {
+.alliance-wars__grid__edge__sector__team--left,
+.alliance-wars__grid__edge__sector__team--right {
 	border: min(3px, 0.2vw) solid #d6dee3;
 	width: 23%;
 }
-.lg-war__grid__edge__sector__team--left {
+.alliance-wars__grid__edge__sector__team--left {
 	left: -88%;
 }
-.lg-war__grid__edge__sector__team--right {
+.alliance-wars__grid__edge__sector__team--right {
 	right: -88%;
 }
-.lg-war__grid__edge__sector__team--off {
+.alliance-wars__grid__edge__sector__team--off {
 	display: none;
 }
-.lg-war__grid__edge__sector__team--1 {
+.alliance-wars__grid__edge__sector__team--1 {
 	background-color: var(--team-1-background-color, #000000);
 	border-color: var(--team-1-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--2 {
+.alliance-wars__grid__edge__sector__team--2 {
 	background-color: var(--team-2-background-color, #000000);
 	border-color: var(--team-2-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--3 {
+.alliance-wars__grid__edge__sector__team--3 {
 	background-color: var(--team-3-background-color, #000000);
 	border-color: var(--team-3-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--4 {
+.alliance-wars__grid__edge__sector__team--4 {
 	background-color: var(--team-4-background-color, #000000);
 	border-color: var(--team-4-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--5 {
+.alliance-wars__grid__edge__sector__team--5 {
 	background-color: var(--team-5-background-color, #000000);
 	border-color: var(--team-5-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--6 {
+.alliance-wars__grid__edge__sector__team--6 {
 	background-color: var(--team-6-background-color, #000000);
 	border-color: var(--team-6-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--7 {
+.alliance-wars__grid__edge__sector__team--7 {
 	background-color: var(--team-7-background-color, #000000);
 	border-color: var(--team-7-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--8 {
+.alliance-wars__grid__edge__sector__team--8 {
 	background-color: var(--team-8-background-color, #000000);
 	border-color: var(--team-8-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--9 {
+.alliance-wars__grid__edge__sector__team--9 {
 	background-color: var(--team-9-background-color, #000000);
 	border-color: var(--team-9-border-color, #d6dee3);
 }
-.lg-war__grid__edge__sector__team--10 {
+.alliance-wars__grid__edge__sector__team--10 {
 	background-color: var(--team-10-background-color, #000000);
 	border-color: var(--team-10-border-color, #d6dee3);
 }
 
 /* HELP */
 
-.lg-war__help {
+.alliance-wars__help {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 1;
 }
-.lg-war__help__button {
+.alliance-wars__help__button {
 	color: #ffffff;
 	font-family: Arial;
 	font-size: 1.75rem;
@@ -334,13 +334,13 @@ body {
 	left: 1.25rem;
 	cursor: pointer;
 }
-.lg-war__help__button:hover {
+.alliance-wars__help__button:hover {
 	background-color: rgba(255, 255, 255, 0.25);
 }
-.lg-war__help__button:hover + .lg-war__help__content {
+.alliance-wars__help__button:hover + .alliance-wars__help__content {
 	display: block;
 }
-.lg-war__help__content {
+.alliance-wars__help__content {
 	color: #ffffff;
 	font-family: Arial;
 	font-size: 1em;
@@ -352,13 +352,13 @@ body {
 
 /* MENU */
 
-.lg-war__menu {
+.alliance-wars__menu {
 	width: calc(100% / 2800 * 268);
 	position: absolute;
 	top: calc(100% / 1400 * 100);
 	right: calc(100% / 2800 * 50);
 }
-.lg-war__menu__items {
+.alliance-wars__menu__items {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -367,9 +367,9 @@ body {
 	align-items: flex-end;
 	gap: 0.75rem;
 }
-.lg-war__menu__item {
+.alliance-wars__menu__item {
 }
-.lg-war__menu__button {
+.alliance-wars__menu__button {
 	color: #ffffff;
 	font-family: Arial;
 	font-size: 1rem;
@@ -385,7 +385,7 @@ body {
 	cursor: pointer;
 	user-select: none;
 }
-.lg-war__menu__button::after {
+.alliance-wars__menu__button::after {
 	content: '\002714';
 	font-size: 1.25rem;
 	text-indent: 0.125rem;
@@ -394,40 +394,40 @@ body {
 	height: 1rem;
 	display: block;
 }
-.lg-war__menu__button--on::after {
+.alliance-wars__menu__button--on::after {
 	content: '\002714';
 }
-.lg-war__menu__button--off::after {
+.alliance-wars__menu__button--off::after {
 	content: '';
 }
-.lg-war__menu__button--1::after {
+.alliance-wars__menu__button--1::after {
 	background-color: var(--team-1-background-color, #000000);
 }
-.lg-war__menu__button--2::after {
+.alliance-wars__menu__button--2::after {
 	background-color: var(--team-2-background-color, #000000);
 }
-.lg-war__menu__button--3::after {
+.alliance-wars__menu__button--3::after {
 	background-color: var(--team-3-background-color, #000000);
 }
-.lg-war__menu__button--4::after {
+.alliance-wars__menu__button--4::after {
 	background-color: var(--team-4-background-color, #000000);
 }
-.lg-war__menu__button--5::after {
+.alliance-wars__menu__button--5::after {
 	background-color: var(--team-5-background-color, #000000);
 }
-.lg-war__menu__button--6::after {
+.alliance-wars__menu__button--6::after {
 	background-color: var(--team-6-background-color, #000000);
 }
-.lg-war__menu__button--7::after {
+.alliance-wars__menu__button--7::after {
 	background-color: var(--team-7-background-color, #000000);
 }
-.lg-war__menu__button--8::after {
+.alliance-wars__menu__button--8::after {
 	background-color: var(--team-8-background-color, #000000);
 }
-.lg-war__menu__button--9::after {
+.alliance-wars__menu__button--9::after {
 	background-color: var(--team-9-background-color, #000000);
 }
-.lg-war__menu__button--10::after {
+.alliance-wars__menu__button--10::after {
 	background-color: var(--team-10-background-color, #000000);
 }
 
