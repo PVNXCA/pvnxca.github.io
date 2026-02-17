@@ -71,17 +71,10 @@ body {
 
 /* GRID */
 
-.alliance-war__container {
-	height: 100%;
-	aspect-ratio: 2632/1400;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 .alliance-war__grid {
-	width: calc(100% / 2632 * 2432);
-	height: calc(100% / 1400 * 1200);
+	height: calc(100% - 5rem);
+	aspect-ratio: 2432/1200;
+	margin: 2.5rem;
 	position: relative;
 }
 .alliance-war__grid__edge {
@@ -242,8 +235,7 @@ body {
 .alliance-war__grid__edge__sector__team--top,
 .alliance-war__grid__edge__sector__team--bottom {
 	border: min(4px, 0.2vw) solid #d6dee3;
-	height: 50%;
-		height: 30%;
+	height: 30%;
 }
 .alliance-war__grid__edge__sector__team--top {
 	top: -18%;
@@ -353,10 +345,9 @@ body {
 /* MENU */
 
 .alliance-war__menu {
-	/*width: calc(100% / 2800 * 268);*/
 	position: absolute;
-	top: calc(100% / 1400 * 100);
-	right: calc(100% / 2800 * 50);
+	top: 2.5rem;
+	right: 1.25rem;
 }
 .alliance-war__menu__items {
 	list-style: none;
@@ -456,4 +447,3 @@ body {
 		font-size: calc(100vh / 1400 * 40);
 	}
 }
-
