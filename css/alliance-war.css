@@ -358,7 +358,7 @@ body {
 
 .alliance-war__menu {
 	position: absolute;
-	top: calc(100% / 1400 * 50);
+	top: calc(100% / 1400 * 100);
 	right: calc(100% / 2800 * 50);
 }
 .alliance-war__menu__items {
