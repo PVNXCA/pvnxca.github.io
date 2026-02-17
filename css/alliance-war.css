@@ -21,13 +21,17 @@ body {
 	position: relative;
 }
 .alliance-war--ratio-by-height {
-	height: 1400px;
-	max-height: 100%;
+	/*height: 1400px;
+	max-height: 100%;*/
+	height: 100%;
+	max-height: 1400px;
 }
 
 .alliance-war--ratio-by-width {
-	width: 2800px;
-	max-width: 100%;
+	/*width: 2800px;
+	max-width: 100%;*/
+	width: 100%;
+	max-width: 2800px;
 }
 .alliance-war::before {
 	content: '';
@@ -71,10 +75,18 @@ body {
 
 /* GRID */
 
+.alliance-war__container {
+	height: 100%;
+	aspect-ratio: 2632/1400;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .alliance-war__grid {
-	height: calc(100% - 5rem);
+	width: calc(100% / 2632 * 2432);
+	height: calc(100% / 1400 * 1200);
 	aspect-ratio: 2432/1200;
-	margin: 2.5rem;
 	position: relative;
 }
 .alliance-war__grid__edge {
@@ -346,8 +358,8 @@ body {
 
 .alliance-war__menu {
 	position: absolute;
-	top: 2.5rem;
-	right: 1.25rem;
+	top: calc(100% / 1400 * 1200);
+	right: calc(100% / 2800 * 50);
 }
 .alliance-war__menu__items {
 	list-style: none;
