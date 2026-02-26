@@ -7,6 +7,27 @@ body {
 html {
 	font-size: 40px;
 }
+.html--ratio-by-width {
+	font-size: min(calc(100vw / 2800 * 40), 40px);
+}
+.html--ratio-by-height {
+	font-size: min(calc(100vh / 1400 * 40), 40px);
+}
+.html--vertical {
+	width: 100vh;
+	height: 100vw;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform: rotate(90deg);
+	transform-origin: 0 0;
+}
+.html--vertical.html--ratio-by-width {
+	font-size: min(calc(100vh / 2800 * 40), 40px);
+}
+.html--vertical.html--ratio-by-height {
+	font-size: min(calc(100vw / 1400 * 40), 40px);
+}
 body {
 	background-color: #000000;
 	margin: 0;
@@ -24,7 +45,6 @@ body {
 	height: 1400px;
 	max-height: 100%;
 }
-
 .alliance-war--ratio-by-width {
 	width: 2800px;
 	max-width: 100%;
@@ -442,11 +462,11 @@ body {
  * ==========================================================
  */
 
-@media only screen and (max-width: 2800px) {
+/*@media only screen and (max-width: 2800px) {
 	
 	/* GLOBAL */
 	
-	.ratio-by-width {
+	/*.html--ratio-by-width {
 		font-size: calc(100vw / 2800 * 40);
 	}
 }
@@ -455,7 +475,7 @@ body {
 	
 	/* GLOBAL */
 	
-	.ratio-by-height {
+	/*.html--ratio-by-height {
 		font-size: calc(100vh / 1400 * 40);
 	}
-}
+}*/
