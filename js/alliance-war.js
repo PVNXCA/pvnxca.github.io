@@ -5,22 +5,35 @@ let LgWarContent = document.querySelector('.alliance-war');
 function setOrientationClass() {
 	if (LgWarContent !== null) {
 		if (window.innerWidth > window.innerHeight) {
-			LgWarContent.classList.add('alliance-war--horizontal');
-			LgWarContent.classList.remove('alliance-war--vertical');
+			CurrentHtml.classList.add('html--horizontal');
+			CurrentHtml.classList.remove('html--vertical');
+			console.log(window.innerHeight + ' / ' + window.innerWidth + ' = ' + window.innerHeight / window.innerWidth);
 			if (window.innerHeight / window.innerWidth <= 0.5) {
-				CurrentHtml.classList.add('ratio-by-height');
-				CurrentHtml.classList.remove('ratio-by-width');
+				CurrentHtml.classList.add('html--ratio-by-height');
+				CurrentHtml.classList.remove('html--ratio-by-width');
 				LgWarContent.classList.add('alliance-war--ratio-by-height');
 				LgWarContent.classList.remove('alliance-war--ratio-by-width');
 			} else {
-				CurrentHtml.classList.add('ratio-by-width');
-				CurrentHtml.classList.remove('ratio-by-height');
+				CurrentHtml.classList.add('html--ratio-by-width');
+				CurrentHtml.classList.remove('html--ratio-by-height');
 				LgWarContent.classList.add('alliance-war--ratio-by-width');
 				LgWarContent.classList.remove('alliance-war--ratio-by-height');
 			}
 		} else {
-			LgWarContent.classList.add('alliance-war--vertical');
-			LgWarContent.classList.remove('alliance-war--horizontal');
+			CurrentHtml.classList.add('html--vertical');
+			CurrentHtml.classList.remove('html--horizontal');
+			console.log(window.innerWidth + ' / ' + window.innerHeight + ' = ' + window.innerWidth / window.innerHeight);
+			if (window.innerWidth / window.innerHeight <= 0.5) {
+				CurrentHtml.classList.add('html--ratio-by-height');
+				CurrentHtml.classList.remove('html--ratio-by-width');
+				LgWarContent.classList.add('alliance-war--ratio-by-height');
+				LgWarContent.classList.remove('alliance-war--ratio-by-width');
+			} else {
+				CurrentHtml.classList.add('html--ratio-by-width');
+				CurrentHtml.classList.remove('html--ratio-by-height');
+				LgWarContent.classList.add('alliance-war--ratio-by-width');
+				LgWarContent.classList.remove('alliance-war--ratio-by-height');
+			}
 		}
 	}
 }
